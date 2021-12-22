@@ -1,0 +1,24 @@
+footer{
+    .main-footer {
+        color: #FFFFFF;
+        padding: 10px 0;
+        background-image: url(/img/footer-bg.jpg);
+    }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        .listGroup {
+            display: flex;
+            text-align: left;
+
+            .logo-bg {
+                background-image: url(/img/dc-logo-bg.png);
+                background-position: center;
+                background-size: cover;
+                width: 40%;
+            }
+        }
+    }
+   
+
+}
