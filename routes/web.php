@@ -19,12 +19,16 @@ Route::get('/home.homePage',function(){
 })->name("home.homePage");
 
 Route::get("/comics.comicsPage",function(){
+
+  //leggere i dati
   $dati_fumetti = config("comics");
-  /* dump($dati_fumetti) */;
+
+    //passo i dati alla view
     return view("comics.comicsPage",[
+    //creo una hiave
     "lista_fumetti" => $dati_fumetti
-    
    ]);
+
 })->name("comics.comicsPage");
 
 Route::get('/characters.charactersPage',function(){
@@ -34,7 +38,7 @@ Route::get('/characters.charactersPage',function(){
 Route::get('/comics.comicsPage',function(){
     return view('comics.comicsPage');
 })->name("comics.comicsPage");
- */
+ *//* 
 Route::get('/movies.moviesPage',function(){
     return view('movies.moviesPage');
 })->name("movies.moviesPage");
@@ -66,3 +70,4 @@ Route::get('/news.newsPage',function(){
 Route::get('/shop.shopPage',function(){
     return view('shop.shopPage');
 })->name("shop.shopPage");
+ */

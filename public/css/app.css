@@ -10,18 +10,47 @@ header .container {
   margin: 0 auto;
 }
 
-header .dark-content {
-  background-color: #1C1C1C;
-  color: #FFFFFF;
-  padding-bottom: 40px;
-  text-align: center;
-}
-
 header .dark-content .hero-hero {
   background-image: url(/img/jumbotron.jpg);
   background-size: cover;
   height: 20vW;
   z-index: -1;
+}
+
+main {
+  background-color: black;
+}
+
+main .product-container {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 5px;
+  padding: 40px 0;
+}
+
+main .product-container .product-card {
+  flex-basis: calc(16.6666666667% - 5px);
+  height: 16.6666666667vw;
+  position: relative;
+}
+
+main .product-container .product-card h6 {
+  color: #FFFFFF;
+}
+
+main .product-container .product-card .box-url {
+  max-width: 150px;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+main .product-container .product-card .box-url img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer .main-footer {
@@ -45,5 +74,10 @@ footer .container .listGroup .logo-bg {
   background-position: center;
   background-size: cover;
   width: 40%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
