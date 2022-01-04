@@ -13,11 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/home.homePage',function(){
-    return view('home.homePage');
-})->name("home.homePage");
-
 Route::get("/comics.comicsPage",function(){
 
   //leggere i dati
@@ -31,17 +26,12 @@ Route::get("/comics.comicsPage",function(){
 
 })->name("comics.comicsPage");
 
-/* Route::get('/characters.charactersPage',function(){
-    return view('characters.charactersPage');
-})->name("characters.charactersPage");
-
- */
 Route::get('/dettagli/{id}',function($id){
     $dati_fumetti = config("comics");
     if(is_numeric($id) && $id >= 0 && $id < count($dati_fumetti)){
       
         $fumetto = $dati_fumetti[$id];
-        
+
         return view('products.details',[
             "fumetto"=> $fumetto
         ]);
