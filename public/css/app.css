@@ -38,9 +38,8 @@ main .border_comics {
   height: 50px;
 }
 
-main .products_comics {
+main .products_comics div.container {
   position: relative;
-  top: -220px;
 }
 
 main .products_comics .info_bg {
@@ -71,6 +70,8 @@ main .products_comics .adv_box img {
 }
 
 main .products_comics .box-url {
+  position: absolute;
+  top: -220px;
   width: 150px;
   height: 200px;
   overflow: hidden;
@@ -117,6 +118,11 @@ main .product-container .product-card .box-url img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+footer .datails_footer {
+  top: -220px;
+  position: relative;
 }
 
 footer .main-footer {

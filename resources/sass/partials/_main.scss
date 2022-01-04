@@ -18,8 +18,10 @@ main{
         
     }
     .products_comics{
-        position: relative;
-        top: -220px;
+        div.container{
+
+            position: relative;
+        }
        
         .info_bg{
             background-color: #55BA59;
@@ -47,6 +49,9 @@ main{
       
             
         .box-url{
+            position: absolute;
+            top: -220px;
+
             width: 150px;
             height: 200px;
             overflow: hidden;
