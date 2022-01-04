@@ -3,5 +3,6 @@
     
 
 @section('main_content')
+<div> @include('partials.card') </div>
 
 @endsection

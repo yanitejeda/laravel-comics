@@ -31,43 +31,27 @@ Route::get("/comics.comicsPage",function(){
 
 })->name("comics.comicsPage");
 
-Route::get('/characters.charactersPage',function(){
+/* Route::get('/characters.charactersPage',function(){
     return view('characters.charactersPage');
 })->name("characters.charactersPage");
-/* 
-Route::get('/comics.comicsPage',function(){
-    return view('comics.comicsPage');
-})->name("comics.comicsPage");
- *//* 
-Route::get('/movies.moviesPage',function(){
-    return view('movies.moviesPage');
-})->name("movies.moviesPage");
 
-Route::get('/tv.tvPage',function(){
-    return view('tv.tvPage');
-})->name("tv.tvPage");
-
-Route::get('/games.gamesPage',function(){
-    return view('games.gamesPage');
-})->name("games.gamesPage");
-
-Route::get('/collectibles.collectiblesPage',function(){
-    return view('collectibles.collectiblesPage');
-})->name("collectibles.collectiblesPage");
-
-Route::get('/videos.videosPage',function(){
-    return view('videos.videosPage');
-})->name("videos.videosPage");
-
-Route::get('/fans.fansPage',function(){
-    return view('fans.fansPage');
-})->name("fans.fansPage");
-
-Route::get('/news.newsPage',function(){
-    return view('news.newsPage');
-})->name("news.newsPage");
-
-Route::get('/shop.shopPage',function(){
-    return view('shop.shopPage');
-})->name("shop.shopPage");
  */
+Route::get('/dettagli/{id}',function($id){
+    $dati_fumetti = config("comics");
+    if(is_numeric($id) && $id >= 0 && $id < count($dati_fumetti)){
+      
+        $fumetto = $dati_fumetti[$id];
+        
+        return view('products.details',[
+            "fumetto"=> $fumetto
+        ]);
+
+    } else
+    {
+        abort('404');
+    }
+
+
+   
+})->name("products.details");
+

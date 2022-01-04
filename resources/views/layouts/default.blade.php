@@ -18,10 +18,6 @@
     <main>
         <div>
             @yield('main_content')
-
-        </div>
-        <div>
-            @include('partials.card')
         </div>
     </main>
     <footer>

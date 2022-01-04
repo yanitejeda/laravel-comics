@@ -2,47 +2,50 @@
 $nav_links = [
     [
         'tittle' => 'CHARACTERS',
-        'rout_name' => '#',
+        'route_name' => '#',
     ],
     [
         'tittle' => 'COMICS',
-        'rout_name' => '#',
+        'route_name' => '#',
     ],
     [
         'tittle' => 'MOVIES',
-        'rout_name' => '#',
+        'route_name' => '#',
     ],
     [
         'tittle' => 'TV',
-        'rout_name' => '#',
+        'route_name' => '#',
     ],
     [
         'tittle' => 'GAMES',
-        'rout_name' => '#',
+        'route_name' => '#',
     ],
     [
         'tittle' => 'COLLECTIBLES',
-        'rout_name' => '#',
+        'route_name' => '#',
     ],
     [
         'tittle' => 'VIDEOS',
-        'rout_name' => '#',
+        'route_name' => '#',
     ],
     [
         'tittle' => 'FANS',
-        'rout_name' => '#',
+        'route_name' => '#',
     ],
     [
         'tittle' => 'NEWS',
-        'rout_name' => '#',
+        'route_name' => '#',
     ],
     [
         'tittle' => 'SHOP',
-        'rout_name' => '#',
+        'route_name' => '#',
     ],
 ];
+
+//recupero la rotta
 dump(Request::route()->getName());
-//$routeName = Request::route()->getName()
+$routeName = Request::route()->getName()
+
 @endphp
 
 <nav class="navbar  navbar-expand-lg navbar-light bg-light">
@@ -58,7 +61,7 @@ dump(Request::route()->getName());
                 @foreach ($nav_links as $value)
 
                     <li class="nav-item ">
-                        <a class="nav-link{{-- {{$routeName === $value['route_name'] ? 'active' : ''}} --}}" aria-current="page" href="#">{{ $value['tittle'] }}</a>
+                        <a class="nav-link {{$routeName === $value['route_name'] ? 'active' : ''}} " aria-current="page" href="{{ $value['route_name'] }}">{{ $value['tittle'] }}</a>
                     </li>
                 @endforeach
 

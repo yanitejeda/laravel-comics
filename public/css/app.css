@@ -17,8 +17,71 @@ header .dark-content .hero-hero {
   z-index: -1;
 }
 
-main {
+header .active {
+  background-color: #008cff;
+}
+
+main .green_text {
+  color: #8CF69C;
+}
+
+main .white_text {
+  color: #FFFFFF;
+}
+
+main .main_card {
   background-color: black;
+}
+
+main .border_comics {
+  background-color: #0077ff;
+  height: 50px;
+}
+
+main .products_comics {
+  position: relative;
+  top: -220px;
+}
+
+main .products_comics .info_bg {
+  background-color: #55BA59;
+  padding: 6px;
+}
+
+main .products_comics .comics_info_section {
+  background-color: #F6F6F6;
+  border: 1px solid #E3E3E3;
+}
+
+main .products_comics .comics_info_section .row {
+  font-size: 12px;
+}
+
+main .products_comics .adv_text {
+  text-align: right;
+}
+
+main .products_comics .adv_box {
+  overflow: hidden;
+}
+
+main .products_comics .adv_box img {
+  width: 100%;
+  height: 100%;
+}
+
+main .products_comics .box-url {
+  width: 150px;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+main .products_comics .box-url img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
 }
 
 main .product-container {
@@ -27,6 +90,10 @@ main .product-container {
   flex-wrap: wrap;
   gap: 0 5px;
   padding: 40px 0;
+}
+
+main .product-container a.product-card {
+  text-decoration: none;
 }
 
 main .product-container .product-card {
@@ -40,7 +107,6 @@ main .product-container .product-card h6 {
 }
 
 main .product-container .product-card .box-url {
-  max-width: 150px;
   max-height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -79,5 +145,9 @@ footer .container .listGroup .logo-bg {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.Border_b {
+  border-bottom: 1px solid #E3E3E3;
 }
 
