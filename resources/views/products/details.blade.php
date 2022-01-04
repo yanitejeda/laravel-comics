@@ -12,7 +12,7 @@
                 <img src="{{$fumetto['thumb']}}" alt="" />
             </div>
             
-            <div class="row">
+            <div class="row py-5">
                 <div class="col-9">
                     <h6>{{$fumetto['title']}}</h6>
                     <div class="row py-2">

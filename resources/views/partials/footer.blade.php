@@ -1,4 +1,67 @@
 @php
+ /*    $footerInfo = [
+        "dcComics" => [
+            "CHARACTERS" ,
+            "COMICS",
+            "MOVIES",
+            "TV",
+            "GAMES",
+            "VIDEOS",
+            "NEWS",  
+        ],
+
+        "shop"=>[   
+             "Shop DC",
+            
+             "Shop DC Collectiblea",
+            
+        ],
+
+
+        "dc"=>[ 
+             "Terms Of Use",
+            
+              "Privacy policy (New)",
+                
+             "Ad Choices",
+            
+            "Advertising",
+                
+             "Jobs",
+            
+            "Subscritions",
+             
+             "Telent Workshops",
+                
+            "CPSC Certificates",
+            
+            "Rating",
+        
+            "Shop Help",
+                
+             "Jobs",
+            
+             "Contact Us",
+        
+        ],
+
+        "site"=>[   
+            "DC",
+            
+            "MAD Magazine",
+                
+            "DC Kids",
+            
+            "DC Universe",
+                
+            "DC Power Visa",
+             
+        ],
+    ];
+
+     */
+
+
  $dcComics=[
                 [
                 "tittle" => "CHARACTERS"
@@ -16,7 +79,7 @@
                 ],[
                 "tittle" => "NEWS"
                 ],
-];
+    ];
 
  $shop=[
          [
@@ -24,7 +87,7 @@
         ], [
         "tittle" => "Shop DC Collectiblea"
         ],
-];
+    ];
  $dc=[
         [
         "tittle" => "Terms Of Use"
@@ -70,18 +133,18 @@ $site=[
 
 <div class="main-footer">
     <div class=" container">
-        <div class="listGroup">
+        <div class="listGroup justify-content-between">
             <div class="d-flex">
 
-                <div>
-                    <ul>
+                <div class="px-2">
+                    <ul class="list-unstyled">
                         @foreach ($dcComics as $value)
                         <li>{{$value['tittle']}}</li>
                             
                         @endforeach
                     </ul>
     
-                    <ul>
+                    <ul class="list-unstyled">
                         @foreach ($shop as $value)
                         <li>{{$value['tittle']}}</li>
                             
@@ -89,13 +152,13 @@ $site=[
                     </ul>
                 </div>
     
-                <ul>
+                <ul class="list-unstyled px-2">
                     @foreach ($dc as $value)
                     <li>{{$value['tittle']}}</li>
                         
                     @endforeach
                 </ul>
-                <ul>
+                <ul class="list-unstyled px-2">
                     @foreach ($site as $value)
                     <li>{{$value['tittle']}}</li>
                         

@@ -43,7 +43,7 @@ $nav_links = [
 ];
 
 //recupero la rotta
-dump(Request::route()->getName());
+//dump(Request::route()->getName());
 $routeName = Request::route()->getName()
 
 @endphp
